@@ -1,0 +1,25 @@
+package Package;
+
+public abstract class Vehicle {
+	
+	protected String brand;
+    protected String name;
+    protected String licenseNumber;
+    protected int topSpeed;
+    protected int gasCap;
+    protected int wheel;
+	
+    public Vehicle(String brand, String name, String licenseNumber, int topSpeed, int gasCap, int wheel) {
+		this.brand = brand;
+		this.name = name;
+		this.licenseNumber = licenseNumber;
+		this.topSpeed = topSpeed;
+		this.gasCap = gasCap;
+		this.wheel = wheel;
+	}
+    
+	abstract void specialInfo();
+
+	protected abstract Object getName();
+
+}
